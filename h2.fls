@@ -224,6 +224,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN1.png
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN1.png
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN1.png
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8c.tfm
@@ -251,6 +254,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8c.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN2.png
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN2.png
+INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/HNN2.png
 INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/methodology.tex
 INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/methodology.tex
 INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/experiment.tex
