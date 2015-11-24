@@ -1,0 +1,60 @@
+\section{Background}
+\subsection{Character Recognition}
+\subsection{Hopfield Network}
+\subsubsection{Hopfield Network Elements}
+Hopfield network consists of a set of interconnected neurons which update their activation values asynchronously. The activation values are binary, usually \{-1,1\}. The update of a unit depends on the other units of the network and on itself. A unit $i$ will be influence by an other unit $j$ with a certain weight $w_{ij}$, and have a threshold value.\\
+
+So there is a constraint due to the other neurons and due the specific threshold of the unit.\\
+
+The new activation value (state) of a neuron is compute, in discret time, by the function \ref{eq:hop1}:
+\begin{equation}
+\label{eq:hop1}
+x_i(t + 1) = sign(\sum_{j = 1}^{n}x_j(t)w_{ij} - \theta_i)
+\end{equation}
+or function \ref{eq:hop2}\\
+\begin{equation}
+\label{eq:hop2}
+X = sign(XW - T)
+\end{equation}
+Where $X$, $W$, $T$ and the $sign$ function are:
+\begin{itemize}
+  \item $X$ is the activation value of the $n$ units/neurons: $X = \left(\begin{array}{c}
+x_1\\ 
+x_2\\
+\vdots \\
+x_n
+\end{array}\right)$
+  \item $W$ is the weight matrix: $W = \begin{bmatrix}
+w_{11} & w_{12} & \dots & w_{1n}  \\
+w_{21} & w_{22} & \dots & w_{2n} \\
+\vdots  &            & \ddots & \vdots \\
+w_{n1} & w_{n2} & \dots & w_{nn} 
+\end{bmatrix}$ where $w_{ij}$ can be interpreted as the influence of neuron $i$ over neuron $j$ (and reciprocally).
+  \item $T$ is the threshold of each unit: $T = \left(\begin{array}{c}
+\theta_{1}\\ 
+\theta_2\\
+\vdots \\
+\theta_{n}
+\end{array}\right)$
+  \item the $sign$ function is define as function \ref{eq:hop3}:
+  \begin{equation}
+	\label{eq:hop3}
+	sign(x) = \begin{cases}
+					+1 & \text{if } x \geq 0\\
+					-1 & \text{otherwise}
+				\end{cases}
+  \end{equation}
+\end{itemize}
+
+Usually, an Hopfield Network has a weight matrix symmetrix, zero-diagonal(no loop, a unit does not influence on itself). We will only consider that case in our project. 
+
+\subsubsection{Hebbian Learning}
+A simple model due to Donald Hebb captures the idea of associative memory. Imagine that the weights between neurons whose activities are positively correlated are increased:
+\begin{equation}
+	\label{eq:Heb1}
+	\frac{dw_{ij}}{dt} \sim \text{Correlation}(x_i, x_j)
+  \end{equation}
+  Now imagine that when stimulus $m$ is present (for example, the smell of a banana), the activity of neuron $m$ increases; and that neuron $n$ is associated with another stimulus, $n$ (for example, the sight of a yellow object). If these two stimuli: a yellow sight and a banana smell. co-occur in the environment, then the Hebbian learning rule (\ref{eq:Heb1}) will increase the weights $w_{nm}$ and $w_{mn}$. This means that when, on a later occasion, stimulus $n$ occurs in isolation, making the activity $x_n$ large, the positive weight from $n$ to $m$ will cause neuron $m$ also to be activated. Thus the response to the sight of a yellow object is an automatic association with the smell of a banana. We could call this pattern completion. No teacher is required for this associative memory to work. No signal is needed to indicate that a correlation has been detected or that an as- sociation should be made. The unsupervised, local learning algorithm and the unsupervised, local activity rule spontaneously produce associative memory.\\
+
+This idea seems so simple and so effective that it must be relevant to how memories work in the brain.
+\subsubsection{Character recognition using Hopfield Network}
