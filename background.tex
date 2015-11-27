@@ -85,6 +85,40 @@ A simple model due to Donald Hebb captures the idea of associative memory. Imagi
 
   When $m = 1$, we always converge to the impress pattern. When $m > 1$, we can only hope to converge to a known pattern if the different patterns are as orthogonal as possible (the different patterns have to be really different). If they are quite related it is possible to have a mix of different pattern.
 
+  We can increase the capacity of our network by modifying our objective function to measure how well it stores memories and minimizing that function. Consider the error between a single neuron of the network, with inputs $\textbf{x}^{(n)}$ and binary labels $t^{(n)}$. We can define this error function $G(W)$ as follows:
+\begin{equation}
+\label{eq:opt1}
+G(W) = -\sum_{i} \sum_{n} t_{i}^{(n)}\text{ln}y_{i}^{(n)} + (1 - t_{i}^{n})\text{ln}(1 - y_{i}^{(n)})
+\end{equation}
+
+where
+
+\begin{equation}
+\label{eq:opt2}
+t_{i}^{(n)} = \begin{cases}
+          1 & x_{i}^{(n)} = 1\\
+          0 & x_{i}^{(n)} = -1
+        \end{cases}
+\end{equation}
+
+and
+
+\begin{equation}
+\label{eq:opt3}
+y_{i}^{(n)} = \frac{1}{1 + e^{-a_{i}^{(n)}}}
+% y_{i}^{(n)} = \frac{1}{1 + e^{-a_{i}^{(n)}}} & \text{where a_{i}^{n} = \sum w_{ij}x_{j}^{(n)}}
+\end{equation}
+
+Now we can minimize $G(W)$ to determine our weights. However, we run the risk of overfitting our network. We will reduce this risk by making use of regularization. In this case we will minimize 
+\begin{equation}
+\label{eq:opt4}
+M(W) = G(W) + \alpha E_w(W)
+\end{equation}
+where $\alpha$ is a regularization parameter and $E_w(W)$ is a penalty function. This regularizer will act as a bias against $W$ which will keep the values from becoming too large and overfitting the data.\\
+
+We will be minimizing the function by utilizing gradient descent, a first order optimization algorithm. Gradient descent works via a backpropagation algorithm whereby we modify $w$ to move opposite the gradient of $G$. In this way we find the $w$ which minimizes the error function.
+
+
 \subsection{Convergence of Hopfield Network}
 Hopfield networks converges to a local state. The energy function of a Hopfield network in a certain state is:
 \begin{equation}
@@ -121,7 +155,7 @@ Then we have:
 \label{eq:energy5}
 E_1(x) - E_1(x') = -(x_k - x'_k) \cdot (\sum_{j = 1}^{n} w_{kj}x_j - \theta_k)
 \end{equation}
-The second term of equation \ref{eq:energy5}: ($\sum_{j = 1}^{n} w_{kj}x_j - \theta_k$) is the excitation $e_k$ of the $k^{th}$ unit. The unit changed its state, so the excitation has a different sign than $x_k$ and $-x'_k$ (according to equation \ref{eq:hop1}). Therefor, $E_1(x) - E_1(x')$ is positive, which implies that $E(x) > E(x')$.  So the energy will decrease for every change, and since there is only a finite number of possible states, the network should reach a state where the energy cannot decrease more, it will be a stable state.\\
+The second term of equation \ref{eq:energy5}: ($\sum_{j = 1}^{n} w_{kj}x_j - \theta_k$) is the excitation $e_k$ of the $k^{th}$ unit. The unit changed its state, so the excitation has a different sign than $x_k$ and $-x'_k$ (according to equation \ref{eq:hop1}). Therefore, $E_1(x) - E_1(x')$ is positive, which implies that $E(x) > E(x')$.  So the energy will decrease for every change, and since there is only a finite number of possible states, the network should reach a state where the energy cannot decrease more, it will be a stable state.\\
 
-Of course the stable state is not unique but it is certain that the system will converge. The final state will depend on the input, the initial state of the system. This conclusion is very useful since we could first train the Hopfield network to get multiple stable state that stand for specific character or digits. Then the input image will be handwritten character or digits with noise and they will be expected to converge to a stable state that we trained previousely. 
+Of course the stable state is not unique but it is certain that the system will converge. The final state will depend on the input, the initial state of the system. This conclusion is very useful since we could first train the Hopfield network to get multiple stable state that stand for specific character or digits. Then the input image will be handwritten character or digits with noise and they will be expected to converge to a stable state that we trained previousely. \\
 
