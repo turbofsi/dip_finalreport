@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 NOV 2015 01:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 NOV 2015 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -708,12 +708,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
@@ -730,12 +730,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[6] <./figs/Digits.png, id=31, 837.1275pt x 332.24126pt>
+<./figs/Digits.png, id=28, 837.1275pt x 332.24126pt>
 File: ./figs/Digits.png Graphic file (type png)
 <use ./figs/Digits.png>
 Package pdftex.def Info: ./figs/Digits.png used on input line 7.
 (pdftex.def)             Requested size: 418.56273pt x 166.12021pt.
-<./figs/Digits-hnd.png, id=32, 855.195pt x 312.16624pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./figs/Digits-hnd.png, id=29, 855.195pt x 312.16624pt>
 File: ./figs/Digits-hnd.png Graphic file (type png)
 <use ./figs/Digits-hnd.png>
 Package pdftex.def Info: ./figs/Digits-hnd.png used on input line 14.
@@ -746,48 +749,240 @@ Overfull \hbox (9.34091pt too wide) in paragraph at lines 14--15
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[7 <./figs/Digits.png (PNG copy)> <./figs/Digits-hnd.png (PNG copy)>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-)
+[7 <./figs/Digits.png (PNG copy)> <./figs/Digits-hnd.png (PNG copy)>])
 (/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/experiment.t
-ex)
+ex <./figs/2st.png, id=37, 562.1pt x 421.575pt>
+File: ./figs/2st.png Graphic file (type png)
+<use ./figs/2st.png>
+Package pdftex.def Info: ./figs/2st.png used on input line 7.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+<./figs/3st.png, id=38, 562.1pt x 421.575pt>
+File: ./figs/3st.png Graphic file (type png)
+<use ./figs/3st.png>
+Package pdftex.def Info: ./figs/3st.png used on input line 16.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+<./figs/4st.png, id=39, 562.1pt x 421.575pt>
+File: ./figs/4st.png Graphic file (type png)
+<use ./figs/4st.png>
+Package pdftex.def Info: ./figs/4st.png used on input line 25.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+<./figs/5st.png, id=40, 562.1pt x 421.575pt>
+File: ./figs/5st.png Graphic file (type png)
+<use ./figs/5st.png>
+Package pdftex.def Info: ./figs/5st.png used on input line 34.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.36581pt too wide) in paragraph at lines 39--40
+[]\T1/futs/m/n/10.95 We can squash more mem-o-ries into the net-work. Fig-ure 4
+.4[] shows a set of five mem-o-ries(digits
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+[8 <./figs/2st.png (PNG copy)>] <./figs/10st.png, id=44, 562.1pt x 421.575pt>
+File: ./figs/10st.png Graphic file (type png)
+<use ./figs/10st.png>
+Package pdftex.def Info: ./figs/10st.png used on input line 43.
+(pdftex.def)             Requested size: 168.6313pt x 126.47346pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./figs/3st.png (PNG copy)> <./figs/4st.png (PNG copy)>] <./figs/statics1.pn
+g, id=48, 893.3375pt x 561.09625pt>
+File: ./figs/statics1.png Graphic file (type png)
+<use ./figs/statics1.png>
+Package pdftex.def Info: ./figs/statics1.png used on input line 53.
+(pdftex.def)             Requested size: 268.00331pt x 168.33017pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./figs/5st.png (PNG copy)> <./figs/10st.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+<./figs/s2.png, id=52, 508.90125pt x 383.4325pt>
+File: ./figs/s2.png Graphic file (type png)
+<use ./figs/s2.png>
+Package pdftex.def Info: ./figs/s2.png used on input line 77.
+(pdftex.def)             Requested size: 209.12778pt x 157.56523pt.
+File: ./figs/s2.png Graphic file (type png)
+<use ./figs/s2.png>
+Package pdftex.def Info: ./figs/s2.png used on input line 80.
+(pdftex.def)             Requested size: 209.12778pt x 157.56523pt.
+
+Overfull \hbox (9.06653pt too wide) in paragraph at lines 77--81
+ [][][] 
+ []
+
+[11 <./figs/statics1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+<./figs/s3.png, id=57, 512.91624pt x 384.43625pt>
+File: ./figs/s3.png Graphic file (type png)
+<use ./figs/s3.png>
+Package pdftex.def Info: ./figs/s3.png used on input line 91.
+(pdftex.def)             Requested size: 209.12778pt x 156.74583pt.
+<./figs/o3.png, id=58, 512.91624pt x 384.43625pt>
+File: ./figs/o3.png Graphic file (type png)
+<use ./figs/o3.png>
+Package pdftex.def Info: ./figs/o3.png used on input line 94.
+(pdftex.def)             Requested size: 209.12778pt x 156.74583pt.
+
+Overfull \hbox (9.06653pt too wide) in paragraph at lines 91--95
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+<./figs/s5.png, id=59, 509.40312pt x 382.42876pt>
+File: ./figs/s5.png Graphic file (type png)
+<use ./figs/s5.png>
+Package pdftex.def Info: ./figs/s5.png used on input line 105.
+(pdftex.def)             Requested size: 209.12778pt x 157.00104pt.
+<./figs/o5.png, id=60, 509.905pt x 383.4325pt>
+File: ./figs/o5.png Graphic file (type png)
+<use ./figs/o5.png>
+Package pdftex.def Info: ./figs/o5.png used on input line 108.
+(pdftex.def)             Requested size: 209.12778pt x 157.261pt.
+
+Overfull \hbox (9.06653pt too wide) in paragraph at lines 105--109
+ [][][] 
+ []
+
+[12 <./figs/s2.png> <./figs/s3.png> <./figs/o3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+<./figs/s9.png, id=67, 509.905pt x 378.91562pt>
+File: ./figs/s9.png Graphic file (type png)
+<use ./figs/s9.png>
+Package pdftex.def Info: ./figs/s9.png used on input line 119.
+(pdftex.def)             Requested size: 209.12778pt x 155.40843pt.
+<./figs/o9.png, id=68, 513.92pt x 385.44pt>
+File: ./figs/o9.png Graphic file (type png)
+<use ./figs/o9.png>
+Package pdftex.def Info: ./figs/o9.png used on input line 122.
+(pdftex.def)             Requested size: 209.12778pt x 156.84927pt.
+
+Overfull \hbox (9.06653pt too wide) in paragraph at lines 119--123
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+<./figs/s10.png, id=69, 513.92pt x 384.43625pt>
+File: ./figs/s10.png Graphic file (type png)
+<use ./figs/s10.png>
+Package pdftex.def Info: ./figs/s10.png used on input line 133.
+(pdftex.def)             Requested size: 209.12778pt x 156.44081pt.
+<./figs/o10.png, id=70, 507.8975pt x 382.42876pt>
+File: ./figs/o10.png Graphic file (type png)
+<use ./figs/o10.png>
+Package pdftex.def Info: ./figs/o10.png used on input line 136.
+(pdftex.def)             Requested size: 209.12778pt x 157.46204pt.
+
+Overfull \hbox (9.06653pt too wide) in paragraph at lines 133--137
+ [][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+[13 <./figs/s5.png> <./figs/o5.png> <./figs/s9.png> <./figs/o9.png>])
 (/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/conclusion.t
-ex)
+ex [14 <./figs/s10.png> <./figs/o10.png>])
 (/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/reference.te
-x) [8] (/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.au
-x) ) 
+x) [15] (/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.a
+ux) ) 
 Here is how much of TeX's memory you used:
- 8969 strings out of 493089
- 139938 string characters out of 6134842
+ 9087 strings out of 493089
+ 141694 string characters out of 6134842
  389625 words of memory out of 5000000
- 12237 multiletter control sequences out of 15000+600000
- 104443 words of font info for 114 fonts, out of 8000000 for 9000
+ 12336 multiletter control sequences out of 15000+600000
+ 113209 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,54p,1155b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+ 50i,11n,54p,1153b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final R
-eport/h2.pdf" (8 pages, 151761 bytes).
+eport/h2.pdf" (15 pages, 561519 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
