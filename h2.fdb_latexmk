@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1448673162 "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.tex" "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.pdf" "h2" 1448673164
+["pdflatex"] 1448778671 "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.tex" "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.pdf" "h2" 1448778673
   "./figs/10st.png" 1448640108 7416 9eaced0004d38401b2a0e6e19426ff6a ""
   "./figs/2st.png" 1448639938 7433 9a253f163e5b76efe9ae804c9afee184 ""
   "./figs/3st.png" 1448639957 7433 9c50fe76d5ec35bfa631a4a29cf22755 ""
@@ -19,7 +19,8 @@
   "./figs/s5.png" 1448669910 54638 97991d092c65b9fd2fc082b3b3c1eb9c ""
   "./figs/s9.png" 1448670001 54518 a636cda1b6838edf425ba1f39265a892 ""
   "./figs/statics1.png" 1448646772 119552 754a3a6b5dffc1877d3ac1065387215a ""
-  "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.aux" 1448673164 6328 aed3c896ad029486d2c24aa1364ea8d1 ""
+  "./figs/statics3.png" 1448778231 130363 747ea68a500d40a15abb24dd6771d330 ""
+  "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.aux" 1448778673 6475 ef3269f09c95e255db9ba729540a4339 ""
   "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.tex" 1448640851 3578 de98ac7db71599be1d99c588c262f188 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -142,15 +143,15 @@
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
   "background.tex" 1448670400 10239 1f94088188916823e25523b4de6e873a ""
   "conclusion.tex" 1448672392 540 1c998bf96c4c879a43e60bce4bef778d ""
-  "experiment.tex" 1448670528 8524 1d5e47cf426d0676de721ce1fb10da71 ""
-  "h2.aux" 1448673164 6328 aed3c896ad029486d2c24aa1364ea8d1 ""
+  "experiment.tex" 1448778668 8954 d902d7a42269e598294ad984447dc0b2 ""
+  "h2.aux" 1448778673 6475 ef3269f09c95e255db9ba729540a4339 ""
   "h2.tex" 1448640851 3578 de98ac7db71599be1d99c588c262f188 ""
   "introduction.tex" 1448670301 2073 7ec8313c6e8c23ebcd59046d802744ce ""
   "methodology.tex" 1448670451 2711 761727676ee173fb8e066fe462192041 ""
   "reference.tex" 1448673158 567 670d36fe5cb93e0c9d113144caedf00e ""
   (generated)
   "h2.aux"
+  "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.log"
   "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.pdf"
   "h2.log"
-  "/Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.log"
   "h2.pdf"
