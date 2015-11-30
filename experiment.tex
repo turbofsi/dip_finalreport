@@ -27,7 +27,7 @@ In Figure \ref{fg:ex2}, we can notice that, when we store 3 memories(digits 0, 1
 \label{fg:ex3}
 \end{figure}
 
-As shown in Figure \ref{fg:ex3}, When 4 memories(digits 0, 1, 2 and 3) stores in the Hopfield network, the first three samples still could convergence to the correct stable state. However, the fourth sample digit 1 converge into a spurious stable state which likes a mixture state of digit 2 and 3. it is possible that this mixture state could have a lower energy compare with sample digit 1 that we stored in Hopfield network. \\
+As shown in Figure \ref{fg:ex3}, When 4 memories(digits 0, 1, 2 and 3) stores in the Hopfield network, the first three test cases could still convergence to the correct stable state. However, the fourth test case digit 1 converge into a spurious stable state which likes a mixture state of digit 2 and 3. It is possible that this mixture state could have a lower energy compare with sample digit 1 that we stored in Hopfield network. \\
 
 \begin{figure}[h]
 \centering
@@ -36,7 +36,7 @@ As shown in Figure \ref{fg:ex3}, When 4 memories(digits 0, 1, 2 and 3) stores in
 \label{fg:ex4}
 \end{figure}
 
-We can squash more memories into the network. Figure \ref{fg:ex4} shows a set of five memories(digits 0, 1, 2, 3, 4) storing in the network. We can notice that the first two digit 0 samples could still convergence to the correct stable state. However, two of those digit 1 sample fail to convergence to the correct stable state. Instead of converging to the sample digit 1 we stored in the network, they both converge into the same spurious stable state which is similar with sample digit 1 but have few pixels flipped around the top.\\
+We can squash more memories into the network. Figure \ref{fg:ex4} shows a set of five memories(digits 0, 1, 2, 3, 4) storing in the network. We can notice that the first two digit 0 test cases could still converge to the correct stable state. However, two of those digit 1 test case fail to converge to the correct stable state. Instead of converging to the sample digit 1 we stored in the network, they both converge into the same spurious stable state which is similar with sample digit 1 but have few pixels flipped around the top.\\
 
 \begin{figure}[h]
 \centering
@@ -45,7 +45,7 @@ We can squash more memories into the network. Figure \ref{fg:ex4} shows a set of
 \label{fg:ex5}
 \end{figure}
 
-In figure \ref{fg:ex5}, We continued add memories into the network up to ten, it can be seen that none of the test cases could converge to one of the stored memories. The first two digit 0 converge to same mixed stable state and the two digit 1 converge converge to a different mixed stable state which closely resembles a digit 7. We found the fact that test cases are tend to converge to some mixed stable states, and believe that these particular mixed stable states must be dominant when running our algorithm with this data set. They are most likely two of the lowest energy states in the entire network.
+In figure \ref{fg:ex5}, We continued add memories into the network up to ten, it can be seen that none of those test cases could converge to the corresponding stored memories. The first two digit 0 converge to same mixed stable state and the two digit 1 converge converge to a different mixed stable state which closely resembles a digit 7. We found the fact that test cases are tend to converge to some mixed stable states, and believe that these particular mixed stable states must be dominant when running our algorithm with this data set. They are most likely two of the lowest energy states in the entire network.
 
 \subsubsection{Discussion about experiment results}
 \begin{figure}[h]
@@ -54,7 +54,7 @@ In figure \ref{fg:ex5}, We continued add memories into the network up to ten, it
 \caption{the number of test cases that converge to the correct stored memory decreases following the increasing number of memories stored in network}
 \label{fg:ex6}
 \end{figure}
-After looking at the experiment results above, we saw an interesting trend. As shown in Figure \ref{fg:ex6}, it is obvious that as the number of memories stored increases, the number of samples that converge to the correct stored memory decreases. This trend was expected due to the variation of our data set, and the nature of Hopfield networks in general. \newpage
+After looking at the experiment results above, we saw an interesting trend. As shown in Figure \ref{fg:ex6}, it is obvious that as the number of memories stored increases, the number of test cases that converge to the correct stored memory decreases. This trend was expected due to the variation of our data set, and the nature of Hopfield networks in general. \newpage
 
 According to the experiment results, Hopfield network model can fail in various ways:\\
 
@@ -82,7 +82,7 @@ In the previous section, We observed that as the number of memories stored incre
 	\label{fg:ost1}
 \end{figure}
 
-Looking at the first two pie charts with only two memories stored in Figure \ref{fg:ost1}, it can be seen that the percentage correct using the standard weights and optimized weights is the same at 78\%.\\
+Looking at the first two pie charts in Figure \ref{fg:ost1}. With only two memories stored in network, it can be seen that the percentage correct using the standard weights and optimized weights is the same at 78\%.\\
 
 \begin{figure}[h]
 	\centering
@@ -142,11 +142,11 @@ Similarly, in Figure \ref{fg:ost5}, with ten memories stored, the percent correc
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{statics3}
+\includegraphics[scale=0.4]{statics3}
 \caption{Summary of experiemnt results}
 \label{fg:sum}
 \end{figure}
 
-In sum, as shown in Figure \ref{fg:sum}, as the number of memories stored in network increases, the percentage of test cases that convergence into corrected stable state decreases. Also, the optimized weights does have better performance compare with standard weights version Hopfield network. 
+In sum, as shown in Figure \ref{fg:sum}, as the number of memories stored in network increases, the percentage of test cases that converge into correct stable state decreases. Also, the optimized weights does have better performance than standard weights. \newpage
 
 
