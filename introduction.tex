@@ -1,9 +1,16 @@
 \section{Introduction}
-Neural networks have received increasing usage in the areas of pattern recognition. One of the important applications is in character recognition. Character recognition has many practical interests, such as zip code recognition, document analysis. Many questions are usually involved, such as the choice of data representation, the design of classification algorithm and the selection of training data. In using neural net classifier, many researchers were choosing the multi-layer feed forward model with back-propagation algorithms. In this report, we choose to investigate the handwritten character(isolated digits) recognition project by using the discrete Hopfield network model as a pattern classifier. The data representation is based on image pixels. This type of representation is simple and straightforward. \\
+% Human beings have been given a natural tendency to identify letters, objects, numbers, and voices. However, making a machine do these types of tasks is a very
+% complicated problem. Pattern recognition is a necessary component of artificial intelligence and computer vision.\\
 
-Neural networks process information in a similar way the human brain does. The network is composed of a large number of highly interconnected processing elements working in parallel to solve a specific problem. Neural networks learn by example. A neuron has many inputs and one output. The neuron has two modes of operation:
-\begin{enumerate}[label=(\alph*)]
-\item Training mode. In the training mode, the neuron can be trained for particular input patterns.
-\item Using mode. In the using mode, when a taught input pattern is detected at the input, its associated output becomes the current output.
-\end{enumerate} 
-If the input pattern does not belong in the taught list of input patterns, the training rule is used. Neural network has many applications. The most likely applications for the neural networks are classification, association and reasoning. An important application of neural networks is pattern recognition. Pattern recognition can be implemented by using a feed-forward neural network that has been trained accordingly. During training, the network is trained to associate outputs with input patterns. When the network is used, it identifies the input pattern and tries to output the associated output pattern.
+Handwritten digits recognition is an old and important problem of machine learning. The objective is to recognize images of isolated handwritten digits (0-9). More
+specifically, the problem is equivalent to find a model, which takes image of handwritten digit as input, and output the predicted class label of the image.
+Furthermore, the ideas and methods to solve this problem would be very useful in various fields of pattern recognition problems where large volumes of real-world data is used.\\
+
+Artificial neural networks are mathematical constructs that model certain aspects of biological neurons. Neural networks consist of one or more neurons which can exhibit complex behavior due to the nature of the connections between neurons. Neural networks can serve to store memories of data. These memories mimic biological systems in several ways.
+\begin{enumerate}
+	\item They are associative. With associative memories, one can recall a memory through its association with other memories.
+	\item They are robust in handling error. In a neural network, memories can correct for a certain amount of error and still recall the correct memory.
+	\item Memories are distributed. In a neural network, each neuron plays a part in memory storage. This is opposed to traditional computing, where a memory is associated with a specific location on the storage device.
+\end{enumerate}
+
+Hopfield network is a type of neural network named for John Joseph Hopfield (an American Scientist). It is a fully connected network which contains multiple neurons, each of which is connected to the others via weights. A key feature of Hopfield network is that it converges to a local minimum. This feature creates applications in two main areas: associative memories and optimization. With associative learning, the network can be trained to remember states which can be recalled if it is given only part of the state. Within optimization problems, as the network converges to its local minimum, the neural network's objective function can be optimized for a desired solution.

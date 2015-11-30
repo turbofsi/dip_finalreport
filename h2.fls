@@ -252,11 +252,11 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8c.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/./figs/HNN2.png
 INPUT ./figs/HNN2.png
 INPUT ./figs/HNN2.png
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8c.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm

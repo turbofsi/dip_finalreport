@@ -1,6 +1,6 @@
 \section{Background}
 \subsection{Hopfield Network Elements}
-As shown in Figure \ref{fg:HNN1}, Hopfield network consists of a set of interconnected neurons which update their activation values asynchronously. The activation values are binary, usually \{-1,1\}. The update of a unit depends on the other units of the network and on itself. A unit $i$ will be influence by an other unit $j$ with a certain weight $w_{ij}$, and have a threshold value.\\
+As shown in Figure \ref{fg:HNN1}, Hopfield network consists of a set of interconnected neurons which update their activation values asynchronously. The activation values are binary, usually \{-1,1\}. The update of a unit depends on the other units of the network and on itself. A unit $i$ will be influence by another unit $j$ with a certain weight $w_{ij}$, and have a threshold value.\\
 
 \begin{figure}[h]
 \centering
@@ -9,7 +9,7 @@ As shown in Figure \ref{fg:HNN1}, Hopfield network consists of a set of intercon
 \label{fg:HNN1}
 \end{figure}
 
-So there is a constraint due to the other neurons and due the specific threshold of the unit.\\
+So there is a constraint due to the other neurons and the specific threshold of the unit.\\
 
 The new activation value (state) of a neuron is compute, in discrete time, by the function \ref{eq:hop1}:
 \begin{equation}
@@ -51,7 +51,7 @@ w_{n1} & w_{n2} & \dots & w_{nn}
   \end{equation}
 \end{itemize}
 
-Usually, an Hopfield Network has a weight matrix symmetric, zero-diagonal(no loop, a unit does not influence on itself). We will only consider that case in our project. 
+Usually, an Hopfield Network has a weight matrix symmetric, zero-diagonal(no loop, a unit does not influence on itself). We will use the structure above in this project.
 
 \subsection{Hebbian Learning}
 A simple model due to Donald Hebb captures the idea of associative memory. Imagine that the weights between neurons whose activities are positively correlated are increased:
@@ -61,15 +61,15 @@ A simple model due to Donald Hebb captures the idea of associative memory. Imagi
   \end{equation}
   Now imagine that when stimulus $m$ is present (for example, the smell of a banana), the activity of neuron $m$ increases; and that neuron $n$ is associated with another stimulus, $n$ (for example, the sight of a yellow object). If these two stimuli: a yellow sight and a banana smell. co-occur in the environment, then the Hebbian learning rule (\ref{eq:Heb1}) will increase the weights $w_{nm}$ and $w_{mn}$. This means that when, on a later occasion, stimulus $n$ occurs in isolation, making the activity $x_n$ large, the positive weight from $n$ to $m$ will cause neuron $m$ also to be activated. Thus the response to the sight of a yellow object is an automatic association with the smell of a banana. We could call this pattern completion. No teacher is required for this associative memory to work. No signal is needed to indicate that a correlation has been detected or that an association should be made. The unsupervised, local learning algorithm and the unsupervised, local activity rule spontaneously produce associative memory.\\
 
-  Similar with the example above, we could imagine each standard character image as a complete graph which is shown in Figure \ref{fg:HNN2}. Each pixel in the image will be the neuron in Hopfield Network. We will use the idea of Hebbian learning to train the network which will change weights between each pair of neuron in the network.\\
+  Similar with the example above, we could imagine each digits image as a complete graph which is shown in Figure \ref{fg:HNN2}. Each pixel in the image will be the neuron in Hopfield Network. We will use the idea of Hebbian learning to train the network which will change weights between each pair of neuron in the network.\\
   \begin{figure}[h]
   \centering
   \includegraphics[scale=0.3]{HNN2.png}
-  \caption{Character $T$ being denoted as Hopfield Network}
+  \caption{Example of digit 1 being denoted as Hopfield Network}
   \label{fg:HNN2}
   \end{figure}
 
-  In the Hebbian learning, the weight of the matrix results from a unsupervised learning, this learning type is a reinforcement learning. We consider that we can ”impress” patterns to the network in order to recognize one of them even if they are given in input with a lot of noise. The learning phase consists in learning different pattern in order to set the weight of the edges. For each pattern, we can resume the learning phase as:
+  In the Hebbian learning, the weight of the matrix results from a unsupervised learning, this learning type is a reinforcement learning. We consider that we can impress patterns to the network in order to recognize one of them even if they are given input with a lot of noise. The learning phase consists in learning different pattern in order to set the weight of the edges. For each pattern, we can resume the learning phase as:
   \begin{itemize}
     \item If two unit has the same activation state (\{1, 1\} or \{-1, -1\}), the strength of the connection is reinforce($w_{ij}$ increase).
     \item If two unit has opposite activation state (\{-1, 1\}), the strength of the connection decline.
@@ -81,9 +81,9 @@ A simple model due to Donald Hebb captures the idea of associative memory. Imagi
   \label{eq:Heb2}
   w_{ij}' = w_{ij} + \epsilon x_i x_j
   \end{equation}
-  Equation \ref{eq:Heb2} is iterated various time for each pattern. $x_i$ and $x_j$ represent the state of the units $i$ and $j$ of the pattern being learned. $\epsilon$ is a constant to prevent the connection to became to big or to small(For example: $\epsilon = \frac{1}{m}$)\\
+  Equation \ref{eq:Heb2} is iterated various time for each pattern. $x_i$ and $x_j$ represent the state of the units $i$ and $j$ of the pattern being learned. $\epsilon$ is a constant to prevent the connection to became too big or too small(For example: $\epsilon = \frac{1}{m}$)\\
 
-  When $m = 1$, we always converge to the impress pattern. When $m > 1$, we can only hope to converge to a known pattern if the different patterns are as orthogonal as possible (the different patterns have to be really different). If they are quite related it is possible to have a mix of different pattern.
+  When $m = 1$, we always converge to the impress pattern. When $m > 1$, we can only hope to converge to a known pattern if the different patterns are as orthogonal as possible (the different patterns have to be really different). If they are quite related it is possible to have a mix of different pattern.\\
 
   We can increase the capacity of our network by modifying our objective function to measure how well it stores memories and minimizing that function. Consider the error between a single neuron of the network, with inputs $\textbf{x}^{(n)}$ and binary labels $t^{(n)}$. We can define this error function $G(W)$ as follows:
 \begin{equation}
@@ -114,9 +114,9 @@ Now we can minimize $G(W)$ to determine our weights. However, we run the risk of
 \label{eq:opt4}
 M(W) = G(W) + \alpha E_w(W)
 \end{equation}
-where $\alpha$ is a regularization parameter and $E_w(W)$ is a penalty function. it will act as a bias against $W$ which will keep the values from becoming too large and over-fitting the data.\\
+where $\alpha$ is a regularization parameter and $E_w(W)$ is a penalty function. it will act as a bias against $W$ which will avoid the values becoming too large and over-fitting the data.\\
 
-We will be minimizing the function by utilizing gradient descent, a first order optimization algorithm. Gradient descent works via a back-propagation algorithm whereby we modify $w$ to move opposite the gradient of $G$. In this way we find the $w$ which minimizes the error function.
+We will minimize the function by utilizing gradient descent, a first order optimization algorithm. Gradient descent works via a back-propagation algorithm whereby we modify $w$ to move opposite the gradient of $G$. In this way we find the $w$ which minimizes the error function.
 
 
 \subsection{Convergence of Hopfield Network}
@@ -143,7 +143,7 @@ As the dynamic is asynchronous, only one unit is evaluated at each time. If the 
 
 \begin{enumerate}
   \item $k$ does not change state
-  \item $k$ changes 
+  \item $k$ changes state
 \end{enumerate}
 In the first case, the energy function remains the same, $E(t + 1) = E(t)$. Otherwise, the energy function changes, according to the new excitation value $(x'_k)$ of the $k^{th}$ unit. The difference of energy of the system is given by:
 \begin{equation}
@@ -157,5 +157,5 @@ E_1(x) - E_1(x') = -(x_k - x'_k) \cdot (\sum_{j = 1}^{n} w_{kj}x_j - \theta_k)
 \end{equation}
 The second term of equation \ref{eq:energy5}: ($\sum_{j = 1}^{n} w_{kj}x_j - \theta_k$) is the excitation $e_k$ of the $k^{th}$ unit. The unit changed its state, so the excitation has a different sign than $x_k$ and $-x'_k$ (according to equation \ref{eq:hop1}). Therefore, $E_1(x) - E_1(x')$ is positive, which implies that $E(x) > E(x')$.  So the energy will decrease for every change, and since there is only a finite number of possible states, the network should reach a state where the energy cannot decrease more, it will be a stable state.\\
 
-Of course the stable state is not unique but it is certain that the system will converge. The final state will depend on the input, the initial state of the system. This conclusion is very useful since we could first train the Hopfield network to get multiple stable state that stand for specific character or digits. Then the input image will be handwritten character or digits with noise and they will be expected to converge to a stable state that we trained previously. \\
+Of course the stable state is not unique but it is certain that the system will converge. The final state will depend on the input, the initial state of the system. This conclusion is very useful since we could first train the Hopfield network to get multiple stable states that represent sample handwritten digits from dataset. Then the testing images which is also from dataset will be expected to converge to a stable state that we trained previously. \\
 
