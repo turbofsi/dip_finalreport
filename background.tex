@@ -1,6 +1,6 @@
 \section{Background}
 \subsection{Hopfield Network Elements}
-As shown in Figure \ref{fg:HNN1}, Hopfield network consists of a set of interconnected neurons which update their activation values asynchronously. The activation values are binary, usually \{-1,1\}. The update of a unit depends on the other units of the network and on itself. A unit $i$ will be influence by another unit $j$ with a certain weight $w_{ij}$, and have a threshold value.\\
+As shown in Figure \ref{fg:HNN1}, Hopfield network consists of a set of interconnected neurons which update their activation values asynchronously. The activation values are binary, usually \{-1,1\}. The update of a unit depends on the other units of the network and on itself. A unit $i$ will be influence by another unit $j$ with a certain weight $w_{ij}$, and have a threshold value\cite{bib:info-theory}.\\
 
 \begin{figure}[h]
 \centering
@@ -59,7 +59,7 @@ A simple model due to Donald Hebb captures the idea of associative memory. Imagi
 	\label{eq:Heb1}
 	\frac{dw_{ij}}{dt} \sim \text{Correlation}(x_i, x_j)
   \end{equation}
-  Now imagine that when stimulus $m$ is present (for example, the smell of a banana), the activity of neuron $m$ increases; and that neuron $n$ is associated with another stimulus, $n$ (for example, the sight of a yellow object). If these two stimuli: a yellow sight and a banana smell. co-occur in the environment, then the Hebbian learning rule (\ref{eq:Heb1}) will increase the weights $w_{nm}$ and $w_{mn}$. This means that when, on a later occasion, stimulus $n$ occurs in isolation, making the activity $x_n$ large, the positive weight from $n$ to $m$ will cause neuron $m$ also to be activated. Thus the response to the sight of a yellow object is an automatic association with the smell of a banana. We could call this pattern completion. No teacher is required for this associative memory to work. No signal is needed to indicate that a correlation has been detected or that an association should be made. The unsupervised, local learning algorithm and the unsupervised, local activity rule spontaneously produce associative memory.\\
+  Now imagine that when stimulus $m$ is present (for example, the smell of a banana), the activity of neuron $m$ increases; and that neuron $n$ is associated with another stimulus, $n$ (for example, the sight of a yellow object). If these two stimuli: a yellow sight and a banana smell. co-occur in the environment, then the Hebbian learning rule (\ref{eq:Heb1}) will increase the weights $w_{nm}$ and $w_{mn}$. This means that when, on a later occasion, stimulus $n$ occurs in isolation, making the activity $x_n$ large, the positive weight from $n$ to $m$ will cause neuron $m$ also to be activated. Thus the response to the sight of a yellow object is an automatic association with the smell of a banana. We could call this pattern completion. No teacher is required for this associative memory to work. No signal is needed to indicate that a correlation has been detected or that an association should be made. The unsupervised, local learning algorithm and the unsupervised, local activity rule spontaneously produce associative memory\cite{bib:info-theory, bib:Pradeepta}.\\
 
   Similar with the example above, we could imagine each digits image as a complete graph which is shown in Figure \ref{fg:HNN2}. Each pixel in the image will be the neuron in Hopfield Network. We will use the idea of Hebbian learning to train the network which will change weights between each pair of neuron in the network.\\
   \begin{figure}[h]
@@ -114,7 +114,7 @@ Now we can minimize $G(W)$ to determine our weights. However, we run the risk of
 \label{eq:opt4}
 M(W) = G(W) + \alpha E_w(W)
 \end{equation}
-where $\alpha$ is a regularization parameter and $E_w(W)$ is a penalty function. it will act as a bias against $W$ which will avoid the values becoming too large and over-fitting the data.\\
+where $\alpha$ is a regularization parameter and $E_w(W)$ is a penalty function. it will act as a bias against $W$ which will avoid the values becoming too large and over-fitting the data\cite{bib:statics}.\\
 
 We will minimize the function by utilizing gradient descent, a first order optimization algorithm. Gradient descent works via a back-propagation algorithm whereby we modify $w$ to move opposite the gradient of $G$. In this way we find the $w$ which minimizes the error function.
 

@@ -341,6 +341,10 @@ INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/referenc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futri8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /Users/apple/Documents/2015-FALL/ECE1512-DIP/project/Final Report/h2.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
